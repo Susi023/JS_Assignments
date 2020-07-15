@@ -1,0 +1,28 @@
+<html>
+    <head>
+       <h4> Question 1 : To print day and date in the specified format </h4>
+    </head>
+    <body>
+        <script>
+           
+            var date=new Date();
+            var day=date.getDay();
+            var weekday = new Array(7);
+            weekday[0] = "Sunday";
+            weekday[1] = "Monday";
+            weekday[2] = "Tuesday";
+            weekday[3] = "Wednesday";
+            weekday[4] = "Thursday";
+            weekday[5] = "Friday";
+            weekday[6] = "Saturday";
+            document.writeln('Today is : '+weekday[day]+'<br>')
+            var m='AM'
+            if (date.getHours()>12){
+                m='PM'
+            }
+            document.write('Current time is : '+date.getHours()+' ' +m+' : '+date.getMinutes()+' : '+date.getSeconds())
+
+        </script>
+    </body>
+
+</html>
